@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <style>
+        div {
+            border: 5px solid rgb(234, 27, 141);
+            padding-top: 20px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table cellspacing="15px">
+            <form action="total_price.html" method="get">
+                <tr>
+                    <td><label>Product Name:</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label>Unit Price:</label></td>
+                    <td><input type="text" name="price" id="price"></td>
+                </tr>
+                <tr>
+                    <td><label>Quantity</label></td>
+                    <td><input type="number" name="quantity" id="quantity"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Get Total" onclick="gettotal()"></td>
+                </tr>
+                <tr>
+
+                    <td><span>
+                            <p>Total Amount:</p>
+                        </span></td>
+                    <td><span>
+                            <p id="totalamt"></p>
+                        </span></td>
+                </tr>
+                <br>
+            </form>
+        </table>
+    </div>
+
+    <script>
+        function gettotal() {
+            var priceobj = document.getElementById("price");
+            var quantityobj = document.getElementById("quantity");
+            var printobj = document.getElementById("totalamt");
+            printobj.innerText = priceobj.value * quantityobj.value;
+
+        }
+    </script>
+</body>
+
+</html>

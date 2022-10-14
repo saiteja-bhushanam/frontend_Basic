@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{
+            background-color: wheat;
+        }
+        img{
+            width: 75px;
+            border: 4px double black;
+            border-radius: 15px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container" >
+    <img src="ImageMap_Task_Technologies.png" alt="">
+    <p>Hi there </p>
+    <form action="" method="get">
+    <label>dropdown</label>
+        <select name="color" id="color">
+            <option value="black">black</option>
+            <option value="blue">blue</option>
+            <option value="grey">grey</option>
+            <option value="green">green</option>
+        <input type="submit" value="submit" onclick="colorchange()">
+        </form>
+
+        </select>
+</div>
+<script>
+    function colorchange(){
+var colorObj=document.getElementById("color");
+document.getElementById("container").style.backgroundColor = colorObj.value;
+}
+</script>
+</body>
+</html>

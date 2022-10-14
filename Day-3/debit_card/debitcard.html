@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <style>
+        * {
+            color: blue;
+        }
+
+        #top {
+            width: 500px;
+            border: 2px solid grey;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        #toppara {
+            margin: 0px;
+            background-color: skyblue;
+            height: 20px;
+            padding: 19px;
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="top">
+            <p id="toppara">This is a secure 128-bit SSL Encrypted payment. You're safe.</p>
+
+            <form action="submit.html" method="get">
+                <input type="radio" name="payment"><label>Credit Card(Visa,Mastercard) <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACVCAMAAABmfEh9AAAAdVBMVEX///////4mVpfZexZbeqsOTpQASJEARI+6xNfb4ev35trYcwDWcAAAS5QiVJakblfefAfn6/IAP4wAPItigK6ks81Sc6bU2+ewvtQ/ZqAAMYcANoiFmb3H0OD3+ftyi7Q0X5yOoMGWqMe2s7+jaE1HbKN6k7qi4FOIAAAEJklEQVR4nO2aa5ObOgyGtS420B67dbhvwiXpbv7/T6xkm0x6hswhJ8AwO3o+bMAx8YssJJk1AMMwDMMwDMMwDMMwDMMwDMN8BWydC7kuIq/tc6KS5v3YROvSHN+b5BlRp2NTP3cb/4u6OZ7m9y4OEdr2bW3QT6JDMVdUmpUbaPK6yiydqarPqm1Eoawq6+eJsqLfShTK6sW8B7HVxYaqCt3OUpXETz2vLzJ3tERtqmrmaInU8XZoOVeV2BJWxapYFav6cqqk2g45V5Uq0u0o5ubBfdYM2O+lksnx75ZHnV9Tdd/j76a3+1b8tGmV2u6+V4c8kPWaKkjzvM/zHNdx1zACVDk1JPQVfrpaH6/OPwcxNOW1Dr26U16WZWOnZb1qq6o8SEPEoayHk8Iz2UGiqTkFGkMc8FAIY1QJXlQUu4vaVVTh71+1oQBjPq03i8BTfcXlo8LGAS0IhXQ96At58apa5aPSg7XAy96O64zBBVjpJyuJcXiJy7krtho0DbQZmUmjCZWK/QzCp9cpH6ybFngGweYkS7n7BjqWObp1RAdoM69Anitrq8unmzJIDz6Cm3LasZaIDADKhPuGdEwXHU0bKoWWPErelujughPZkTo4v1tH1RuUzhyk6kLeJLC/JXMc2pBASdWdcQdSfMY/D9x9GVXk2SLDaXO+ri7kTaQqtsFWQl/uYlV4EBoj9HlFVZX09+21GAth5Aal0OA0X6IYIxqQTlVDbrDHiqpsGXyn9y5Obwq817so4B84NfjpwkRPgi3Ntokns84yedCFAXmGdCAfosEhMq7FDSF8bWZceIIup4h2AagylDr5omchVXT7Mg/TRkPbxtyCJKT9wetC7w/TnVF4VY/i6EKqusxNivAOQ55GtjHt6ElV7uK7ieB+ljGkydN6qt4ATWOGs3u2KDBCSxFJ3KIRQO2MNaRgXbJx7/JqdKxoqm5YStVFk23EzZcKPWbB0VxXN4kVnOmzuRA93cpUHF1KVTsuNpQbxUdvyoJJF36AfBwnuXMJCNOi0tolqqk4upQqO+bbyDv4mAU7Ifq2smnrciW21Mo9jQ66RF3WU4XxKQQln35vWTBFBbGWMiZRRlmXq01z7ZErmS/cxkqqnA1w0pzzgj0KH+z9MtJ5nJAYRl1hpcOQqcuHa6qy71RcqrGqy6jSxCxYHGUoQ2VWUtWFZZYMhTF0JX4ZT7j7YmscoOI9D/US1CWdURZMTlHjS/YKf8VSr3J0JThjt3JqPbCYqsBfZ/7gbnkD3V2nqeXYwqr+U/BTVzyjajvmv2///X07fs99z6A/fmzHh56r6uevb1vx6yerYlWsilV9OVUfP/7ZivmxfZ//d95lzbDP/Qz73Puxz30yO91TtM/9Vzvdq7bTfX073QPJMAzDMAzDMAzDMAzDMAzDMDvlD9oXfKAfz/w2AAAAAElFTkSuQmCC"
+                        alt="img not shown" height="30px" width="30px">
+                    <img src="data:image/png;base64,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"
+                        alt="" height="30px"></label>
+                <input type="radio" name="payment"><label>Paypal <img
+                        src="data:image/jpeg;base64,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"
+                        alt="paypal" height="30px"></label>
+                <br>
+                <br>
+                <legend>Card number <sub> The 16 digits on front of your card</sub> </legend>
+                <input type="text" name="Card number" size="60px">
+                <br><br><span>
+                <span><legend>Expiration date</legend></span>
+                <br>
+                <select name="month" id="month">
+                    <option value="month">month</option>
+                    <option value="jan">january</option>
+                    <option value="feb">feburary</option>
+                    <option value="mar">march</option>
+                </select>
+            
+                <select name="year" id="year">
+                    <option value="year">year</option>
+
+                    <option value="2000">2000</option>
+
+                    <option value="2001">2001</option>
+                </select>
+                </span>
+            
+                <br><br>
+                
+                    
+                        <legend>CVV2/CVC2</legend>
+
+                        <br>
+                        <input type="text" name="cvv" id="cvv" size="3">
+                    
+
+
+                    <br>
+                    <br>
+        </span>
+        <legend>Full Name on a Card</legend>
+        <input type="text" name="cardname" id="cardname" size="50px">
+        <p style="background-color:lightgrey ;padding:10px; text-align:center;margin-bottom: 0%; ">You will be charged
+            $29.00 every month</p>
+    </div>
+
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/DP9-CVgkgDA" title="Just for fun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe>
+
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/DP9-CVgkgDA" title="Use a JavaScript Function to Change Background Color with Input Textbox or Color Picker" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    </form>
+    </div>
+</body>
+
+</html>

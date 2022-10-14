@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <style>
+            #head{
+                background-color: rgba(3, 4, 9, 0.676);
+                width:420px ;
+                margin-bottom: 0px;
+                margin-left: 15px;
+                color:rgb(186, 246, 35);
+                margin-top: 20px;
+                height: 75px;
+                padding: 10px;
+
+            }
+            body{
+                background-image: url("pizza.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+
+                
+            }
+            #Form{
+                width: 400px;
+                background-color: rgba(42, 133, 219, 0.288);
+                margin-top: 0px;
+                padding: 20px;
+                margin-left: 15px;
+
+            }
+            #submit{
+                margin-left: 7px;
+                width: 440  ;
+                background-color: tomato;
+                
+            }
+            #clear{
+                margin-left: 60px ;
+            }
+            #order{
+                margin-left:15px ;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <h4 style="text-align:center ;">WELCOME TO ITALIAN PIZZA</h4>
+            <em><p>we deliver pizza in 40 mins if not pizza is urs</p></em>
+        </div>
+        <div id="Form">
+                <form action="data.html" method="get" target="_blank">
+                    <label id="Email">Email </label>
+                    <input type="text" name="Email" id="Email">
+                    <br>
+                    <br>
+                    <label id="phone">Phone </label>
+                    <input type="text" name="Phone" id="phone" placeholder="Area" size="1" maxlength="4">
+                    <input type="text" name="Phone" id="phone" placeholder="local" size="4">
+                    <input type="text" name="Phone" id="phone" placeholder="local" size="4">
+                    <br><br>
+                    <label id="sliceno">No of Slices</label>
+                    <input type="number" name="sliceno" id="sliceno">
+                    <br><br>
+                    Pizza size
+                    <input type="radio" name="pizzasize"><label>8-inch</label>
+                    <input type="radio" name="pizzasize"><label>12-inch</label>
+                    <input type="radio" name="pizzasize"><label>14-inch</label>
+                    <input type="radio" name="pizzasize"><label>16-inch</label>
+                    <br><br>
+                    <p>Toppings</p>
+                    
+                    <input type="checkbox" name="Toppings"><label>Pepperoni</label>
+                    <input type="checkbox" name="Toppings"><label>Onion</label>
+                    <input type="checkbox" name="Toppings"><label>Mushroom</label>
+                    <input type="checkbox" name="Toppings"><label>Sausage</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="Terms" required><label>I agree to terms and conditions  </label>
+                    <br>
+                </div>
+                    <div id="clear"><br></div>
+                    <div id="order">
+                    <input type="submit" value="order now" style="background-color:tomato ; width:440px" target="_main"></div>
+
+
+                
+                </form>
+                <br>
+        
+    </body>
+</html>
