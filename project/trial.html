@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inside-article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.inside-article .pos-logo img {
+  display: block;
+  width: 120px;
+}
+
+.inside-article .pos-logo:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 5px solid red;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+    </style>
+</head>
+<body>
+    
+
+
+<div class="inside-article">
+    <div class="pos-logo">
+      <img src="rp-1.jpg" />
+    </div>
+  </div>
+
+  
+</body>
+</html>
