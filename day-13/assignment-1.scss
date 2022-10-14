@@ -1,0 +1,9 @@
+@mixin layout($fontsz){
+    border: 2px solid red;
+    box-shadow: 3px 3px 3px grey;
+    padding:10px;
+    margin:8px;
+    background-color: aquamarine;
+    font-size: $fontsz;
+}
+

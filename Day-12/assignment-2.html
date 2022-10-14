@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Bootstrap Example</title>
+
+
+<body>
+    <p class="h1 p-3">
+        Hey there!!
+        <br>
+        Welcome to this website
+        click on the below button to login
+    </p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+        data-bs-target="#form">Loginform</button>
+
+
+    <div class="container-sm modal" id="form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Loginform">Login Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body  text-primary">
+                    <form action="" class="was-validated">
+                <label for="uname" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="uname" id="uname" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                    <br>
+                    <label for="pwd" class="form-label">password</label>
+                <input type="password" class="form-control" name="pwd" id="pwd" required>
+                <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                <div class="float-start">
+                    <input type="checkbox" name="chk" id="chk" checked>
+                    <label for="chk">Remember me</label>
+                </div>
+                <div class="float-end"><a href="">Forgot password</a></div>
+
+            </form>
+                
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="alertbox()">Login</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    function alertbox(){
+        var uname=document.getElementById("uname");
+        var pwd=document.getElementById("pwd");
+        if(uname.value=="admin" && pwd.value=="0000"){
+            alert("welcome admin garu");
+        }
+
+    }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>

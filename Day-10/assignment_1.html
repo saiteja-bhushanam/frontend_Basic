@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Customer name</label>
+    <input type="text" name="cname" id="cname">
+    <br><br>
+    <label>Join Date</label>
+    <input type="date" name="jdate" id="jdate">
+    <br><br>
+    <label>Favoourite color</label>
+    <input type="color" name="favcolor" id="favcolor">
+    <br><br>
+    <input type="button" value="">
+    <script>
+        var cnametxtObj=document.getElementById("cname");
+        var dateDateObj=document.getElementById("jdate");
+        var colorColorObj=document.getElementById("favcolor");
+
+        var CustomerObj={};
+        CustomerObj.name=cnametxtObj.value;
+        CustomerObj.date=dateDateObj.value;
+        CustomerObj.color=colorColorObj.value;
+
+        
+    </script>
+    
+</body>
+
+</html>

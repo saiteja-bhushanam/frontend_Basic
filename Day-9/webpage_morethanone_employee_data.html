@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">Stringify</button>
+    <button onclick="f2()">Parse</button>
+    <script>
+        function f1(){
+var objArray=[
+    {empno:1,ename:"john",job:"fresher",salary:"10000",dept:"ITS"},
+    {empno:1,ename:"kahn",job:"fresher",salary:"10000",dept:"ITS"},
+    {empno:1,ename:"khan",job:"fresher",salary:"10000",dept:"ITS"},
+    {empno:1,ename:"mann",job:"fresher",salary:"10000",dept:"ITS"},
+    {empno:1,ename:"manoj",job:"fresher",salary:"10000",dept:"ITS"}
+]
+var jsonStr=JSON.stringify(objArray);
+console.log(jsonStr);
+
+        }
+
+        function f2(){
+            var jsonStrArray='[{"empno":1,"ename":"john","job":"fresher","salary":100000,"dept":"AMC"},{"empno":2,"ename":"kahn","job":"fresher","salary":100000,"dept":"AMC"},{"empno":3,"ename":"mahn","job":"fresher","salary":100000,"dept":"AMC"},{"empno":4,"ename":"dahn","job":"fresher","salary":100000,"dept":"AMC"},{"empno":5,"ename":"rohan","job":"fresher","salary":100000,"dept":"AMC"}]'
+        
+
+        var jsO=JSON.parse(jsonStrArray);
+        console.log(jsO);}
+    </script>
+</body>
+</html>

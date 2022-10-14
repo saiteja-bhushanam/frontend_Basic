@@ -1,0 +1,28 @@
+ul li a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: black;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+ul li{
+    list-style: none;
+    float: left;
+    margin-left: 9px;
+}
+.img-shape(@radius){
+    border-radius:@radius;
+}
+#img1{
+    height: 100px;
+    width: 100px;
+    .img-shape(5%)
+}
+#img2{
+    height: 100px;
+    width: 100px;
+    .img-shape(50%)
+}
+

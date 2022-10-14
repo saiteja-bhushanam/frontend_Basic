@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>employee data to JSON</legend>
+    <form action="" method="get">
+        <label for="empno">empno:</label>
+        <input type="number" name="empno" id="empno">
+        <br><br>
+        
+        <label for="empname">empname:</label>
+        <input type="text" name="empname" id="empname">
+        <br><br>
+        
+        <label for="empjob">Job:</label>
+        <input type="text" name="empjob" id="empjob">
+        <br><br>
+        
+        <label for="salary">salary:</label>
+        <input type="number" name="salary" id="salary">
+        <br><br>
+        
+        <label for="deptno">deptno:</label>
+        <input type="number" name="deptno" id="deptno">
+        <br><br>
+
+        <input type="button" onclick="f1()" value="conv_json">
+
+        <p id="print"></p>
+        <label for="Json_string">input </label>
+        <input type="text" id="Json_string">
+
+        <input type="button" value="convert to obj" onclick="f2()">
+
+        
+
+    </form>
+</fieldset>
+<script>
+    function f1(){
+    var empid=document.getElementById("empno");
+    var empname=document.getElementById("empname");
+    var empjob=document.getElementById("empjob");
+    var salary=document.getElementById("salary");
+    var deptno=document.getElementById("deptno");
+    var print=document.getElementById("print");
+    console.log(typeof empid);
+    // console.log( empname);
+    // console.log( empjob);
+    // console.log( salary);
+    // console.log( deptno);
+
+a=parseInt(empid.value);
+    b=parseInt(salary.value);
+    c=parseInt(deptno.value);
+
+
+    var obj={empno:a,empname:empname.value,empjob:empjob.value,salary:b,deptno:c};
+    
+
+    var jsonstr=JSON.stringify(obj);
+    console.log(jsonstr);
+
+    print.innerHTML=jsonstr;
+    '{"empno":345,"empname":"rty","empjob":"cvbn","salary":456,"deptno":456}'
+}
+
+function f2(){
+    var empid=document.getElementById("empno");
+    var empn=document.getElementById("empname");
+    var empjob=document.getElementById("empjob");
+    var salary=document.getElementById("salary");
+    var deptno=document.getElementById("deptno");
+    var print=document.getElementById("print");     
+
+
+
+    var json_str=document.getElementById("Json_string").value;
+    var obj= JSON.parse(json_str);
+    empid.value=obj.empno;
+    empn.value=obj.empname;
+    empjob.value=obj.empjob;
+    salary.value=obj.salary;
+    deptno.value=obj.deptno;
+
+
+
+}
+</script>
+</body>
+</html>

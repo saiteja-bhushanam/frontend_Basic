@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="uname">User name:</label>
+    <input type="text" name="uname" id="uname" required autofocus ><br><br>
+    <label for="email">User Email:</label>
+    <input type="email" name="email" id="email" required><br><br>
+    <label for="token">token</label>
+    <input type="text" name="token" id="token" required>
+    <br><br>
+    <input type="button" value="Submit to Localstorage" onclick="submit_items()">
+    <input type="button" value="Delete to Localstorage" onclick="delete_items()">
+    <br><br>
+    <input type="button" value="Get Data" onclick="getdata()">
+
+    <p id="output"></p>
+    <script>
+        var unameTxtObj = document.getElementById("uname");
+        var emailEmailObj = document.getElementById("email");
+        var tokenTxtObj = document.getElementById("token");
+        var paraObj=document.getElementById("output");
+
+
+        function submit_items() {
+            
+            UserObj = {};
+            UserObj.uname = unameTxtObj.value;
+            UserObj.email = emailEmailObj.value;
+            UserObj.token = tokenTxtObj.value;
+
+            var strUserdetails = JSON.stringify(UserObj);
+            localStorage.setItem("userDetails", strUserdetails);
+            alert(strUserdetails);
+
+        }
+
+        function delete_items() {
+            if (localStorage.getItem("userDetails") == null) {
+                alert("there is nothing to remove from local storage");
+                return;
+            }
+            else {
+                localStorage.removeItem("userDetails");
+                alert("Item has been removed from the storage");
+            }
+        }
+
+        function getdata(){
+            if(localStorage.getItem("userDetails")==null){
+                paraObj.innerText="";
+                alert("there is nothing to print");
+
+            }
+            else{
+                paraObj.innerText=localStorage.getItem("userDetails");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">Stringify</button>
+    <button onclick="f2()">parse</button>
+    <script>
+        function f1(){
+            // given object which should be converted into string
+            var obj={empno:1,empname:"Saiteja",empjob:"Analyst",empsal:123,empdept:"AMC"};
+            var jsonstr=JSON.stringify(obj);
+            console.log(jsonstr);
+        }
+
+        function f2(){
+            var JSON_str='{"empno":1,"empname":"saiteja","empjob":"analyst","empsal":123,"empdept":"AMC"}';
+            var jso=JSON.parse(JSON_str);
+            console.log(jso)
+        }
+
+
+    </script>
+    
+</body>
+</html>
