@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title> Login </title>
+    </head>
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css rel="stylesheet">
+    <style>
+        form{
+            text-align: center;
+            background-color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            width: 400px;
+            position: relative;
+            left: 34%;
+        }
+        body{
+            text-align: center;
+            background-color: rgb(219, 222, 224);
+        }
+        h1{
+            color: #146ece;
+            font-family:monospace;
+            font-weight: bold;
+        }
+        div{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #user{
+            
+            width: 350px;
+            height: 50px;
+            border: 1px solid rgb(163, 160, 160);
+            border-radius: 5px;
+            padding: 10px;
+            opacity: 0.7;
+        }
+        #sub{
+            width: 350px;
+            height: 50px;
+            border: 1px solid rgb(163, 160, 160);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        #b{
+            float: left;
+            margin-left: 40px;
+        }
+        #c{
+            float: right;
+            margin-right: 90px;
+        }
+    </style>
+    <body>
+        <br/><br/>
+        <h1>Textbook</h1>
+        <br/>
+        <form>
+            <br/>
+            <label> Log in to Textbook</label><br/><br/>
+            <input id="user" type="text" placeholder="Enter Login ID"  required/>  <br/><br/>
+            <input id="user" type="password" placeholder="Enter Password"/> <br/><br/>
+            <button id="sub" type="button" class="btn btn-primary">Login</button> <br/><br/>
+            <input id="sub" type="reset" class="btn btn-secondary"></button> 
+            <br/><br/>
+            <a id="b" href="#"> Forgot Account Credentials?</a> 
+            <a id="c" href="#"> Signup </a> <br/><br/>
+        </form>
+    </body>
+</html>

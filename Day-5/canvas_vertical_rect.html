@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html  >
+	<head> </head>
+	<body>
+	<h3>Vertical_height </h3>
+		<hr/>	 
+		
+		<input type="button"  onclick="f1()"  value="Draw Graphics" />
+		<br/> <br/>
+		
+		<canvas  id="c1"  width="500"  height="500"  style="border:2px solid blue;">
+		</canvas>
+        <script>
+            function f1(){
+            var obj=document.getElementById("c1");
+            var ctx=obj.getContext("2d");
+            x=10;
+            var a = [50, 200, 50, 90, 150, 40, 100,120,80,60,100,120];
+           
+            for(var i = 0; i < a.length; i++)
+            {
+            ctx.beginPath();
+            ctx.fillStyle = "Blue";
+			ctx.fillRect(x,a[i],30,500-a[i] );
+            x=x+40;
+
+            }
+           
+			}
+            		
+        
+
+     
+       </script>
+       </body>
+       </html>

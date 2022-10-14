@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 2px solid black;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body bgcolor="pink"><div>
+    <h1>Draw vertical columns</h1>
+    <button id="btn" onclick="draw()">draw Vertical columns</button>
+    <br>
+    <canvas height="400" width="400" id="canvas"></canvas>
+    <script>
+        function draw(){
+            var rectObj=document.getElementById("canvas");
+            var draw=rectObj.getContext("2d");
+            var a = [50, 200, 50, 90, 150, 40, 100,120,80,60,100,120,40];
+            var x=0,y=0;
+            for(var i=0;i<a.length;i++){
+                draw.beginPath();
+                draw.fillStyle="green";
+                draw.fillRect(x,a[i],30,500-a[i] );
+                
+
+                draw.strokeStyle = "Blue";	 
+		        draw.strokeRect(x,a[i],30,500-a[i]); 
+                x+=30;
+        }
+
+        }
+    </script></div>
+</body>
+</html>

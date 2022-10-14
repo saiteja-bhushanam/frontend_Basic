@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animations from one end to another
+    </title>
+
+    <style>
+        @keyframes animation-1{
+            from{
+                height:100px;
+                width:100px;
+                position: relative;
+                left: 0%;
+                top: 0%;
+
+            }
+            to{
+                height:100px;
+                width:100px;
+                position: relative;
+                left: 93.66%;
+                top:50%
+            }
+        }
+        img{
+            animation-name: animation-1; 
+            animation-duration:4s;  
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            
+        }
+        body{
+            border: 2px solid tomato;
+            
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="globe.png" alt="" >
+</body>
+</html>

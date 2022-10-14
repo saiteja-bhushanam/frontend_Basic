@@ -1,0 +1,9 @@
+1. How to implement following reqirmenets in CSS3 (As per the image):
+		a. Apply space between words
+		b. Apply space between letters
+		c. Apply shadow for each character in the text
+		d. Other reqirmenets as per the image
+		
+2.  Create  a web page to prepare image gallery. Apply required CSS styles
+
+

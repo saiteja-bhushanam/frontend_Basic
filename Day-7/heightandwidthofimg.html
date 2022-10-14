@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="unsp.jpg" alt="" height="350">
+    <br>
+    Height
+    <input type="range" id="htran" onchange="ht()" name="height" id="height">
+    width
+    <input type="range" id="wtran" name="width" onchange="wt()" id="width">
+<script>
+    function ht(){
+        var imgObj=document.getElementsByTagName("img")[0];
+        var htObj=document.getElementsById("htran").value;
+        imgObj.height=htObj;
+    }
+</script>
+
+</body>
+</html>
